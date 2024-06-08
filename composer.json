@@ -1,0 +1,21 @@
+{
+  "name": "traw/traw-theme",
+  "description": "Distribution to test TRAW extensions",
+  "type": "typo3-cms-extension",
+  "authors": [
+    {
+      "name": "Thomas Rawiel",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "TRAW\\TrawTheme\\": "Classes/"
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "traw_theme"
+    }
+  }
+}
