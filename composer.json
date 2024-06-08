@@ -13,6 +13,14 @@
       "TRAW\\TrawTheme\\": "Classes/"
     }
   },
+  "require": {
+    "traw/hreflang-pages": "^1.0",
+    "traw/powermailcaptcha": "^1.0",
+    "traw/powermailautocomplete": "^2.0",
+    "traw/vhs-col": "^1.0",
+    "traw/video-vtt": "^2.0",
+    "traw/whatchado": "^2.0"
+  },
   "extra": {
     "typo3/cms": {
       "extension-key": "traw_theme"
