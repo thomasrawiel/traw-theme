@@ -1,0 +1,51 @@
+config {
+    doctype = html5
+    xmlprologue = none
+    metaCharset = utf-8
+    forceCharset = utf-8
+    renderCharset = utf-8
+    xhtml_cleaning = all
+
+    admPanel = 0
+    index_enable = 1
+    index_externals = 0
+
+    compressJs = 1
+    concatenateJs = 1
+    compressCss = 1
+    concatenateCss = 1
+
+    absRefPrefix = /
+
+    spamProtectEmailAddresses = 1
+    spamProtectEmailAddresses_atSubst = @
+
+    prefixLocalAnchors = all
+    extTarget = _blank
+
+    uniqueLinkVars = 1
+
+    typolinkCheckRootline = 1
+    typolinkEnableLinksAcrossDomains = 1
+
+    sendCacheHeaders = 1
+    sendCacheHeaders {
+        expires = 86400
+        maxAge = none
+    }
+}
+
+page {
+    config.headerComment = TRAW Test Instance
+}
+
+[applicationContext matches "/^Development\\/DDEV/"]
+config {
+    no_cache = 1
+    compressCss = 0
+    concatenateCss = 0
+    compressJs = 0
+    concatenateJs = 0
+    contentObjectExceptionHandler = 0
+}
+[global]

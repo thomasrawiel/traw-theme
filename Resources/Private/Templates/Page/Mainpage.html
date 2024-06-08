@@ -1,0 +1,29 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+     data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+<f:section name="Main">
+    <section class="hero">
+        <f:format.raw>{hero}</f:format.raw>
+    </section>
+    <div class="site-content" id="top">
+        <f:if condition="!{data.is_siteroot}">
+            <f:render partial="Breadcrumb" section="Breadcrumb" arguments="{_all}"/>
+        </f:if>
+        <!--TYPO3SEARCH_begin-->
+        <f:format.raw>{content}</f:format.raw>
+        <!--TYPO3SEARCH_end-->
+        <f:if condition="{settings.social.showSideFloaterSocial} && {shareSection} == 'show'">
+            <div class="inner">
+                <f:render partial="Side/SideFloater" arguments="{settings.social}"/>
+            </div>
+        </f:if>
+    </div>
+</f:section>
+<f:section name="Stories">
+    <section class="stories">
+        <f:format.raw>{stories}</f:format.raw>
+    </section>
+</f:section>
+</html>
+
+

@@ -1,0 +1,16 @@
+plugin.tx_trawtheme {
+    settings {
+        template {
+            breadcrumb.showHidden = 0
+
+            showLanguageMenu = 1
+
+            menu {
+                entryLevel = 0
+                levels = 4
+            }
+        }
+    }
+}
+
+@import 'EXT:traw_theme/Configuration/TypoScript/Constants/*.typoscript'

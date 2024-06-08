@@ -1,0 +1,6 @@
+page {
+    includeCSS {
+        main = EXT:traw_theme/Resources/Public/Dist/Css/theme.min.css
+        main.forceOnTop = 1
+    }
+}
