@@ -1,0 +1,30 @@
+mod.wizards {
+    newContentElement.wizardItems {
+        traw {
+            header = TRAW Test elements
+            after = special
+            elements {
+                traw_daterange {
+                    iconIdentifier = form-date-picker
+                    title = Date range
+                    description = Display a range between 2 dates
+                    tt_content_defValues {
+                        CType = traw_daterange
+                        header_layout = 3
+                    }
+                }
+                traw_extloaded {
+                    iconIdentifier = module-extensionmanager
+                    title = Extension loaded test
+                    description = Simple condition to check if an extension is loaded
+                    tt_content_defValues {
+                        CType = traw_extloaded
+                        header_layout = 3
+                    }
+                }
+
+            }
+            show = *
+        }
+    }
+}

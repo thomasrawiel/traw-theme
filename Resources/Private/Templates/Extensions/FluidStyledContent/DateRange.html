@@ -1,0 +1,14 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:vcol="http://typo3.org/ns/TRAW/VhsCol/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+<f:section name="Main">
+    <div class="ce-bodytext description">
+        <f:format.raw>{data.bodytext}</f:format.raw>
+    </div>
+    <div class="alert alert-info" role="alert">
+        <f:debug>{data.dateRangeEnd}</f:debug>
+        <vcol:date.dateRange start="{data.dateRangeStart}" end="{data.dateRangeEnd}"/>
+    </div>
+</f:section>
+</html>

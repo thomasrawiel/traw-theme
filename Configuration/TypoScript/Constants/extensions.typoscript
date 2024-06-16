@@ -1,0 +1,5 @@
+styles.templates {
+    partialRootPath = EXT:traw_theme/Resources/Private/Partials/Extensions/FluidStyledContent/
+    layoutRootPath = EXT:traw_theme/Resources/Private/Layouts/Extensions/FluidStyledContent/
+    templateRootPath = EXT:traw_theme/Resources/Private/Templates/Extensions/FluidStyledContent/
+}

@@ -1,0 +1,20 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:vcol="http://typo3.org/ns/TRAW/VhsCol/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+<f:section name="Main">
+    <div class="intro ce-bodytext">
+        <p>User has entered the following extension key: <strong>{flexFormData.extkey}</strong></p>
+    </div>
+    <div class="ce-bodytext description">
+        <f:format.raw>{data.bodytext}</f:format.raw>
+    </div>
+    <div class="alert alert-{vcol:extension.extensionLoaded(extensionKey: flexFormData.extkey,then:'success',else:'danger')}" role="alert">
+
+        <vcol:extension.extensionLoaded extensionKey="{flexFormData.extkey}">
+            <f:then>{flexFormData.extkey} is loaded.</f:then>
+            <f:else>{flexFormData.extkey} is not loaded.</f:else>
+        </vcol:extension.extensionLoaded>
+    </div>
+</f:section>
+</html>

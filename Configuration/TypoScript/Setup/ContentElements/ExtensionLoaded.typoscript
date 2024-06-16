@@ -1,0 +1,8 @@
+tt_content.traw_extloaded =< lib.contentElement
+tt_content.traw_extloaded {
+    templateName = ExtensionLoaded
+
+    dataProcessing {
+        10 = traw-flexform
+    }
+}

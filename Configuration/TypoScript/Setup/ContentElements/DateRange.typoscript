@@ -1,0 +1,4 @@
+tt_content.traw_daterange =< lib.contentElement
+tt_content.traw_daterange {
+    templateName = DateRange
+}

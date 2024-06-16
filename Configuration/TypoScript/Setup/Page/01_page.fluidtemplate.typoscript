@@ -72,7 +72,7 @@ page {
                 if.isTrue = {$plugin.tx_trawtheme.settings.template.showLanguageMenu}
             }
 
-            40 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            40 = menu
             40 {
                 entryLevel = {$plugin.tx_trawtheme.settings.template.menu.entryLevel}
                 levels = {$plugin.tx_trawtheme.settings.template.menu.levels}

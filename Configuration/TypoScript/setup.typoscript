@@ -1,1 +1,2 @@
 @import 'EXT:traw_theme/Configuration/TypoScript/Setup/Page/*.typoscript'
+@import 'EXT:traw_theme/Configuration/TypoScript/Setup/ContentElements/*.typoscript'

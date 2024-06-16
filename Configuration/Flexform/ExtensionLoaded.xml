@@ -1,0 +1,21 @@
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <ROOT>
+        <type>array</type>
+        <el>
+            <extkey>
+                <TCEforms>
+                    <label>Extension key to check</label>
+                    <config>
+                        <type>input</type>
+                        <placeholder>Insert extension key, e.g. my_ext</placeholder>
+                        <required>true</required>
+                        <eval>trim</eval>
+                    </config>
+                </TCEforms>
+            </extkey>
+        </el>
+    </ROOT>
+</T3DataStructure>
