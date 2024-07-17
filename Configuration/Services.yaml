@@ -5,7 +5,6 @@ services:
     public: false
 
   TRAW\TrawTheme\:
-  Replicare\Wiwa\:
     resource: '../Classes/*'
 
   TRAW\TrawTheme\Domain\Model\Address:
