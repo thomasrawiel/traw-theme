@@ -3,3 +3,10 @@ styles.templates {
     layoutRootPath = EXT:traw_theme/Resources/Private/Layouts/Extensions/FluidStyledContent/
     templateRootPath = EXT:traw_theme/Resources/Private/Templates/Extensions/FluidStyledContent/
 }
+
+plugin.tx_ttaddress {
+    view {
+        templateRootPath = EXT:traw_theme/Resources/Private/Templates/Extensions/TtAddress/
+        partialRootPath = EXT:traw_theme/Resources/Private/Partials/Extensions/TtAddress/
+    }
+}

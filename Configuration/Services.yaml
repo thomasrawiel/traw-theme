@@ -1,0 +1,15 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  TRAW\TrawTheme\:
+  Replicare\Wiwa\:
+    resource: '../Classes/*'
+
+  TRAW\TrawTheme\Domain\Model\Address:
+    tags:
+      -
+        name: 'extender.extends'
+        class: FriendsOfTYPO3\TtAddress\Domain\Model\Address

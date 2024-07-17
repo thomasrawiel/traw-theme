@@ -19,7 +19,10 @@
     "traw/powermailautocomplete": "^2.0",
     "traw/vhs-col": "^1.0",
     "traw/video-vtt": "^2.0",
-    "traw/whatchado": "^2.0"
+    "traw/whatchado": "^2.0",
+
+    "evoweb/extender": "^9.0 || ^10",
+    "friendsoftypo3/tt-address": "^8.1"
   },
   "extra": {
     "typo3/cms": {
