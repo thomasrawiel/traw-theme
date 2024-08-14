@@ -1,0 +1,4 @@
+tt_content.traw_phone =< lib.contentElement
+tt_content.traw_phone {
+    templateName = PhoneNumber
+}

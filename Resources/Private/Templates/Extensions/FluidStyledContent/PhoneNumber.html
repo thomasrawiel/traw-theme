@@ -1,0 +1,40 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:vcol="http://typo3.org/ns/TRAW/VhsCol/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+<f:section name="Header"/>
+<f:section name="Main">
+    <div class="alert alert-info" role="alert">
+        <f:debug inline="true" title="header">{data.header}</f:debug>
+        <f:debug inline="true" title="subheader">{data.subheader}</f:debug>
+        <f:debug inline="true" title="header_link">{data.header_link}</f:debug>
+    </div>
+    <div class="alert alert-success">
+        convert phone number into RFC3966 format uri
+        <div><vcol:uri.telephone phoneNumber="{data.header}" /></div>
+        <br>
+        Guess the region
+        <code>&lt;vcol:uri.telephone phoneNumber="{data.subheader}" defaultRegion="DE"/></code>
+        <div><vcol:uri.telephone phoneNumber="{data.subheader}" defaultRegion="de"/></div>
+        <br>
+        From uri
+        <div><vcol:uri.telephone phoneNumber="{data.header_link}" defaultRegion="de"/></div>
+        <br>
+        Different Formats
+        <div>
+            <ul>
+                <li>Default (RFC3966): <vcol:uri.telephone phoneNumber="{data.header}" format="0" /></li>
+                <li>E164: <vcol:uri.telephone phoneNumber="{data.header}" format="1"/></li>
+                <li>INTERNATIONAL: <vcol:uri.telephone phoneNumber="{data.header}" format="2"/></li>
+                <li>NATIONAL: <vcol:uri.telephone phoneNumber="{data.header}" format="3"/></li>
+            </ul>
+        </div>
+    </div>
+    <div class="alert alert-success">
+        Inline <code><f:format.raw>{</f:format.raw>data.header->vcol:uri.telephone()}</code>
+        <div>{data.header->vcol:uri.telephone()}</div>
+        <div>{data.subheader->vcol:uri.telephone(defaultRegion:'de')}</div>
+        <div>{data.header_link->vcol:uri.telephone(defaultRegion:'de',format:3)}</div>
+    </div>
+</f:section>
+</html>

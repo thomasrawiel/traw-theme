@@ -40,6 +40,15 @@ mod.wizards {
                         header_layout = 3
                     }
                 }
+                traw_phone {
+                    iconIdentifier = actions-phone
+                    title = Phone number
+                    description = Converts phone numbers into RFC3966 format uri
+                    tt_content_defValues {
+                        CType = traw_phone
+                        header_layout = 3
+                    }
+                }
             }
             show = *
         }
