@@ -1,0 +1,31 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+<f:section name="Main">
+    <div class="alert alert-info" role="alert">
+        Original link from field <strong>header_link</strong>:
+        <f:debug inline="true">{data.header_link}</f:debug>
+    </div>
+    <div class="alert alert-success" role="alert">
+        <div>Link title, if not set returns "fallback text goes here"</div>
+        <strong>{data.header_link->vcol:link.parameterPart(part:'title', fallback:'fallback text goes here')}</strong>
+    </div>
+    <div class="alert alert-success" role="alert">
+        <div> CSS Class, if not set returns "fallback-css-class"</div>
+        <strong>{data.header_link->vcol:link.parameterPart(part:'class', fallback:'fallback-css-class')}</strong>
+    </div>
+    <div class="alert alert-success" role="alert">
+        <div>Target, if not set returns "no target set"</div>
+        <strong>{data.header_link->vcol:link.parameterPart(part:'target', fallback:'no target set')}</strong>
+    </div>
+    <div class="alert alert-info">
+        <div>If no fallback is set, it the viewhelper can be used in conditions:</div>
+        <strong>
+        <f:if condition="{data.header_link->vcol:link.parameterPart(part:'title', fallback:'')}">
+            <f:then>Title is set</f:then>
+            <f:else>Title is not set</f:else>
+        </f:if>
+        </strong>
+    </div>
+</f:section>
+</html>

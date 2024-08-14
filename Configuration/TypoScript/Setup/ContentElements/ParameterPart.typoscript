@@ -1,0 +1,4 @@
+tt_content.traw_parampart =< lib.contentElement
+tt_content.traw_parampart {
+    templateName = ParameterPart
+}

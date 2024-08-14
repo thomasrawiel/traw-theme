@@ -22,7 +22,15 @@ mod.wizards {
                         header_layout = 3
                     }
                 }
-
+                traw_parampart {
+                    iconIdentifier = actions-link
+                    title = Parameter parts
+                    description = Extracts parameter parts from a link
+                    tt_content_defValues {
+                        CType = traw_parampart
+                        header_layout = 3
+                    }
+                }
             }
             show = *
         }
