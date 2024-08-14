@@ -3,12 +3,19 @@
       data-namespace-typo3-fluid="true">
 <f:layout name="Default"/>
 <f:section name="Main">
-    <div class="ce-bodytext description">
-        <f:format.raw>{data.bodytext}</f:format.raw>
-    </div>
     <div class="alert alert-info" role="alert">
-        <f:debug>{data.dateRangeEnd}</f:debug>
-        <vcol:date.dateRange start="{data.dateRangeStart}" end="{data.dateRangeEnd}"/>
+        <div class="ce-bodytext description">
+            <f:format.raw>{data.bodytext}</f:format.raw>
+        </div>
+        Formatted start date: <f:format.date>{data.dateRangeStart}</f:format.date>
+        <f:debug inline="true" title="dateRangeStart">{data.dateRangeStart}</f:debug>
+        Formatted end date: <f:format.date>{data.dateRangeEnd}</f:format.date>
+        <f:debug inline="true" title="dateRangeEnd">{data.dateRangeEnd}</f:debug>
+    </div>
+    <div class="alert alert-success">
+        <strong>Result:
+            <vcol:date.dateRange start="{data.dateRangeStart}" end="{data.dateRangeEnd}"/>
+        </strong>
     </div>
 </f:section>
 </html>

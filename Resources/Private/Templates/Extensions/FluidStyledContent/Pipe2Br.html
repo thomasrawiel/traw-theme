@@ -1,0 +1,40 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:vcol="http://typo3.org/ns/TRAW/VhsCol/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+<f:section name="Header"/>
+<f:section name="Main">
+    <div class="alert alert-info" role="alert">
+        <f:debug inline="true" title="header">{data.header}</f:debug>
+        <f:debug inline="true" title="subheader">{data.subheader}</f:debug>
+        <f:debug inline="true" title="result"><vcol:text.pipeToBr text="{data.header}" /></f:debug>
+        <f:debug inline="true" title="result with ***"><vcol:text.pipeToBr text="{data.subheader}" search="***" replace="<br/>"/></f:debug>
+    </div>
+    <div class="alert alert-success">
+        <div>Result (wrapped with &lt;f:format.raw&gt;)</div>
+        <strong>
+            <f:format.raw><vcol:text.pipeToBr text="{data.header}" /></f:format.raw>
+        </strong>
+    </div>
+    <div class="alert alert-success">
+        <div>Result (wrapped with &lt;f:format.raw&gt;) replace <code>***</code> with <code>&lt;br/&gt;</code> </div>
+        <strong>
+            <f:format.raw><vcol:text.pipeToBr text="{data.subheader}" search="***" replace="<br/>"/></f:format.raw>
+        </strong>
+    </div>
+    <div class="alert alert-success">
+        <div>Result (wrapped with &lt;f:format.raw&gt;) - Inline test</div>
+        <div><code><f:format.raw>{</f:format.raw>data.header->vcol:text.pipeToBr()->f:format.raw()}</code></div>
+        <strong>
+            {data.header->vcol:text.pipeToBr()->f:format.raw()}
+        </strong>
+    </div>
+    <div class="alert alert-success">
+        <div>Result (wrapped with &lt;f:format.raw&gt;) - Inline test</div>
+        <div><code><f:format.raw>{</f:format.raw>data.header->vcol:text.pipeToBr(search:'***',replace:'&lt;br/>')->f:format.raw()}</code></div>
+        <strong>
+            {data.subheader->vcol:text.pipeToBr(search:'***',replace:'<br/>')->f:format.raw()}
+        </strong>
+    </div>
+</f:section>
+</html>

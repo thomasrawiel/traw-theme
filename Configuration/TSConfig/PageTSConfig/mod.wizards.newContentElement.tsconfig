@@ -31,6 +31,15 @@ mod.wizards {
                         header_layout = 3
                     }
                 }
+                traw_pipe2br {
+                    iconIdentifier = actions-arrow-down-right
+                    title = Pipe 2 BR
+                    description = Pipe in the input field is converted to <br>
+                    tt_content_defValues {
+                        CType = traw_pipe2br
+                        header_layout = 3
+                    }
+                }
             }
             show = *
         }

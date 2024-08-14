@@ -1,0 +1,4 @@
+tt_content.traw_pipe2br =< lib.contentElement
+tt_content.traw_pipe2br {
+    templateName = Pipe2Br
+}
