@@ -14,7 +14,7 @@
     }
   },
   "require": {
-    "traw/hreflang-pages": "^1.0",
+    "traw/hreflang-pages": "^2.0",
     "traw/powermailcaptcha": "^1.0",
     "traw/powermailautocomplete": "^2.0",
     "traw/vhs-col": "^1.0",
