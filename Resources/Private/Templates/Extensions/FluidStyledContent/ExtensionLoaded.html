@@ -15,5 +15,9 @@
             <f:else>{flexFormData.extkey} is not loaded.</f:else>
         </vcol:extension.extensionLoaded>
     </div>
+    <div class="alert alert-{vcol:extension.extensionLoaded(extensionKey: flexFormData.extkey,then:'success',else:'danger')}" role="alert">
+        inline test:
+        {flexFormData.extkey} {vcol:extension.extensionLoaded(extensionKey:flexFormData.extkey,then:'is', else:'is not')} loaded
+    </div>
 </f:section>
 </html>
