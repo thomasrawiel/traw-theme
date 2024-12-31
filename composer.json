@@ -1,24 +1,26 @@
 {
-  "name": "traw/traw-theme",
-  "description": "Distribution to test TRAW extensions",
-  "type": "typo3-cms-extension",
-  "authors": [
-    {
-      "name": "Thomas Rawiel",
-      "role": "Developer"
-    }
-  ],
-  "autoload": {
-    "psr-4": {
-      "TRAW\\TrawTheme\\": "Classes/"
-    }
-  },
-  "require": {
-    "typo3/cms-fluid-styled-content": "^12 || ^13"
-  },
-  "extra": {
-    "typo3/cms": {
-      "extension-key": "traw_theme"
-    }
-  }
+	"name": "traw/traw-theme",
+	"description": "Distribution to test TRAW extensions",
+	"type": "typo3-cms-extension",
+	"authors": [
+		{
+			"name": "Thomas Rawiel",
+			"role": "Developer"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"TRAW\\TrawTheme\\": "Classes/"
+		}
+	},
+	"require": {
+		"typo3/cms-core": "^12 || ^13",
+		"typo3/cms-fluid-styled-content": "^12 || ^13",
+		"traw/vhs-col": "^1.11"
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "traw_theme"
+		}
+	}
 }
