@@ -18,6 +18,12 @@
         <div>Target, if not set returns "no target set"</div>
         <strong>{data.header_link->vcol:link.parameterPart(part:'target', fallback:'no target set')}</strong>
     </div>
+    <div class="alert alert-success" role="alert">
+        <div>Add a class based on the link target</div>
+        <f:link.typolink parameter="{data.header_link}" class="{f:if(condition: '{data.header_link->vcol:link.parameterPart(part:\'target\')} == \'_blank\'', then:'link-external')}">
+            {data.header}
+        </f:link.typolink>
+    </div>
     <div class="alert alert-info">
         <div>If no fallback is set, it the viewhelper can be used in conditions:</div>
         <strong>
@@ -26,6 +32,6 @@
             <f:else>Title is not set</f:else>
         </f:if>
         </strong>
-    </div>
+    </div>"
 </f:section>
 </html>
