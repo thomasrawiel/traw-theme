@@ -191,4 +191,27 @@ call_user_func(function ($_EXTKEY = 'traw_theme', $table = 'tt_content') {
         ],
     ];
 
+    if(\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('sup_header')) {
+        $GLOBALS['TCA']['tt_content']['columns']['header']['config'] = array_merge_recursive(
+            $GLOBALS['TCA']['tt_content']['columns']['header']['config'],
+            [
+                'fieldControl' => [
+                    'importControl' => [
+                        'renderType' => 'addIconTextField',
+                    ],
+                ],
+            ]
+        );
+        $GLOBALS['TCA']['tt_content']['columns']['subheader']['config'] = array_merge_recursive(
+            $GLOBALS['TCA']['tt_content']['columns']['subheader']['config'],
+            [
+                'fieldControl' => [
+                    'importControl' => [
+                        'renderType' => 'addIconTextField',
+                    ],
+                ],
+            ]
+        );
+    }
+
 });

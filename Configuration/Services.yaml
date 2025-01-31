@@ -1,0 +1,17 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  TRAW\TrawTheme\:
+    resource: '../Classes/*'
+
+  TRAW\TrawTheme\EventListener\MyTagsEventListener:
+    tags:
+      - name: event.listener
+        identifier: 'tx-traw-theme-allowed-tags'
+  TRAW\TrawTheme\EventListener\MyLabelsEventListener:
+    tags:
+      - name: event.listener
+        identifier: 'tx-traw-theme-allowed-tags'

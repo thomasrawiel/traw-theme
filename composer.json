@@ -16,7 +16,8 @@
 	"require": {
 		"typo3/cms-core": "^12 || ^13",
 		"typo3/cms-fluid-styled-content": "^12 || ^13",
-		"traw/vhs-col": "^1.11"
+		"traw/vhs-col": "^1.11",
+		"traw/sup-header": "^1.0"
 	},
 	"extra": {
 		"typo3/cms": {

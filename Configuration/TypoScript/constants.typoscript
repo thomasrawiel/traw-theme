@@ -10,6 +10,8 @@ plugin.tx_trawtheme {
                 levels = 4
             }
         }
+        allowedHeaderTags = <sub><sup><br>
+
     }
 }
 
