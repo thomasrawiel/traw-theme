@@ -169,6 +169,7 @@ call_user_func(function ($_EXTKEY = 'traw_theme', $table = 'tt_content') {
     ]);
 
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes($table, 'test_field', 'traw_pipe2br', 'after:header');
+
     $GLOBALS['TCA'][$table]['palettes']['dateRange'] = [
         'label' => 'Date range',
         'showitem' => 'dateRangeStart, dateRangeEnd',
@@ -191,7 +192,7 @@ call_user_func(function ($_EXTKEY = 'traw_theme', $table = 'tt_content') {
         ],
     ];
 
-    if(\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('sup_header')) {
+    if (\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('sup_header')) {
         $GLOBALS['TCA']['tt_content']['columns']['header']['config'] = array_merge_recursive(
             $GLOBALS['TCA']['tt_content']['columns']['header']['config'],
             [

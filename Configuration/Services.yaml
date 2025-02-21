@@ -11,7 +11,3 @@ services:
     tags:
       - name: event.listener
         identifier: 'tx-traw-theme-allowed-tags'
-  TRAW\TrawTheme\EventListener\MyLabelsEventListener:
-    tags:
-      - name: event.listener
-        identifier: 'tx-traw-theme-allowed-tags'
