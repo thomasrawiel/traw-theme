@@ -1,0 +1,19 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<section id="c{data.uid}"
+         class="container frame-{data.frame_class}{f:if(condition: data.space_before_class, then: ' margin__top--{data.space_before_class}')}{f:if(condition: data.space_after_class, then: ' margin__bottom--{data.space_after_class}')}{f:if(condition: data.tx_lincontainer_order_reverse,then:' reverse-order')}">
+    <div class="row">
+        <f:if condition="{data._LOCALIZED_UID}">
+            <a id="c{data._LOCALIZED_UID}"></a>
+        </f:if>
+
+        <f:if condition="{data.header}">
+            <div class="col-12">
+                <f:render partial="Header/All" arguments="{_all}"/>
+            </div>
+        </f:if>
+
+        <f:render section="Main"/>
+    </div>
+</section>
+</html>

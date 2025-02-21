@@ -7,22 +7,22 @@
             <f:render partial="Breadcrumb" section="Breadcrumb" arguments="{_all}" optional="true"/>
         </f:if>
         <div class="container">
-        <div class="row">
-            <div class="col">
-                <h5>Sidebar left</h5>
-                <f:format.raw>{contentLeft}</f:format.raw>
-            </div>
-            <div class="col-6">
-                <!--TYPO3SEARCH_begin-->
-                <f:format.raw>{content}</f:format.raw>
-                <!--TYPO3SEARCH_end-->
-            </div>
-            <div class="col">
-                <h5>Sidebar right:</h5>
-                <f:format.raw>{contentRight}</f:format.raw>
+            <div class="row">
+                <div class="col">
+                    <h5>Sidebar left</h5>
+                    <f:format.raw>{contentLeft}</f:format.raw>
+                </div>
+                <div class="col-6">
+                    <!--TYPO3SEARCH_begin-->
+                    <f:format.raw>{content}</f:format.raw>
+                    <!--TYPO3SEARCH_end-->
+                </div>
+                <div class="col">
+                    <h5>Sidebar right:</h5>
+                    <f:format.raw>{contentRight}</f:format.raw>
+                </div>
             </div>
         </div>
-            </div>
     </div>
 </f:section>
 </html>

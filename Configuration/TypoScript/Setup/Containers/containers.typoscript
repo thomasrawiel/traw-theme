@@ -1,0 +1,56 @@
+lib.containerElement =< lib.contentElement
+lib.containerElement {
+    layoutRootPaths {
+        10 = EXT:traw_theme/Resources/Private/Layouts/Extensions/Container/
+    }
+
+    templateRootPaths {
+        10 = EXT:traw_theme/Resources/Private/Templates/Extensions/Container/
+    }
+
+    partialRootPaths {
+        30 = EXT:traw_theme/Resources/Private/Partials/Extensions/Container/
+    }
+}
+tt_content {
+    row-50-50 =< lib.containerElement
+    row-50-50 {
+        templateName = Row50
+        dataProcessing {
+            100 = B13\Container\DataProcessing\ContainerProcessor
+            100 {
+                colPos = 100
+                as = children_100
+            }
+
+            101 = B13\Container\DataProcessing\ContainerProcessor
+            101 {
+                colPos = 101
+                as = children_101
+            }
+        }
+    }
+    row-33-33-33 =< lib.containerElement
+    row-33-33-33 {
+        templateName = Row33
+        dataProcessing {
+            100 = B13\Container\DataProcessing\ContainerProcessor
+            100 {
+                colPos = 100
+                as = children_100
+            }
+
+            101 = B13\Container\DataProcessing\ContainerProcessor
+            101 {
+                colPos = 101
+                as = children_101
+            }
+
+            102 = B13\Container\DataProcessing\ContainerProcessor
+            102 {
+                colPos = 102
+                as = children_102
+            }
+        }
+    }
+}
