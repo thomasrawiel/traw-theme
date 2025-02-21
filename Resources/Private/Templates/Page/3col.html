@@ -1,0 +1,28 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+<f:section name="Main">
+    <div class="site-content container" id="top">
+        <f:if condition="!{data.is_siteroot}">
+            <f:render partial="Breadcrumb" section="Breadcrumb" arguments="{_all}" optional="true"/>
+        </f:if>
+        <div class="container">
+        <div class="row">
+            <div class="col">
+                <h5>Sidebar left</h5>
+                <f:format.raw>{contentLeft}</f:format.raw>
+            </div>
+            <div class="col-6">
+                <!--TYPO3SEARCH_begin-->
+                <f:format.raw>{content}</f:format.raw>
+                <!--TYPO3SEARCH_end-->
+            </div>
+            <div class="col">
+                <h5>Sidebar right:</h5>
+                <f:format.raw>{contentRight}</f:format.raw>
+            </div>
+        </div>
+            </div>
+    </div>
+</f:section>
+</html>

@@ -51,6 +51,12 @@ page {
                     languageField = sys_language_uid
                 }
             }
+
+            contentLeft < .content
+            contentLeft.select.where = colPos = 1
+
+            contentRight < .content
+            contentRight.select.where = colPos = 2
         }
 
         dataProcessing {

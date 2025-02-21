@@ -19,3 +19,33 @@ mod.web_layout.BackendLayouts {
         }
     }
 }
+
+mod.web_layout.BackendLayouts {
+    3col {
+        title = 3-col-Page
+        config {
+            backend_layout {
+                colCount = 3
+                rowCount = 1
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = Content left
+                                colPos = 1
+                            }
+                            2 {
+                                name = Content
+                                colPos = 0
+                            }
+                            3 {
+                                name = Content right
+                                colPos = 2
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
